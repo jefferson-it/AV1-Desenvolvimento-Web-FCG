@@ -1,0 +1,36 @@
+.main {
+  width: 50%;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+
+  p {
+    text-align: justify;
+  }
+
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-height: 2.5rem;
+    background-color: rgba(119, 151, 216, 0.933);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    width: 90%;
+  }
+}

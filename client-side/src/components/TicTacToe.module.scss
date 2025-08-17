@@ -1,0 +1,65 @@
+.tictactoe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #333;
+  position: relative;
+
+  .block {
+    background-color: #fff;
+    width: 10rem;
+    height: 10rem;
+    margin: 0.15rem;
+    transition: 0.5s linear background;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #858585;
+    }
+
+    font-size: 50pt;
+    font-weight: bold;
+  }
+}
+
+.game {
+  position: relative;
+}
+
+.reset {
+  position: absolute;
+  background-color: #3333339a;
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem;
+  inset: 0;
+  z-index: 2;
+
+  h2 {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    background-color: #333;
+  }
+
+  button {
+    font-size: 20pt;
+    text-transform: uppercase;
+    background-color: #128841;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tictactoe {
+    .block {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
